@@ -77,21 +77,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "huaR — Software Engineer & Creator" },
+      { name: "description", content: "Software engineer and Framer creator with a strong focus on building modern, scalable, and conversion-driven web experiences." },
+      { name: "author", content: "Mejed Alkoutaini" },
+      { property: "og:title", content: "huaR" },
+      { property: "og:description", content: "Software engineer and Framer creator with a strong focus on building modern, scalable, and conversion-driven web experiences." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap",
       },
       {
         rel: "stylesheet",
@@ -111,7 +110,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="bg-black text-zinc-100 antialiased selection:bg-zinc-800 selection:text-white min-h-screen">
         {children}
         <Scripts />
       </body>

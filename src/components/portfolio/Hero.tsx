@@ -1,37 +1,66 @@
+import { useState, useEffect } from "react";
+
 export function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const words = [
+    "Sell Products",
+    "Convert Visitors",
+    "Outshine Competitors",
+    "Accelerate Revenue",
+    "Command Attention"
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setActiveIndex((prev) => (prev + 1) % words.length);
+        setIsTransitioning(false);
+      }, 800);
+    }, 2800);
+    return () => clearInterval(timer);
+  }, [words.length]);
+
+  const currentWord = words[activeIndex];
+  const nextWord = words[(activeIndex + 1) % words.length];
+
   return (
-    <section id="top" className="relative flex flex-col items-center px-6 pt-44 pb-24 text-center">
-      <div className="pointer-events-none absolute inset-0 flex justify-center overflow-hidden">
-        <div className="h-[500px] w-[800px] translate-y-[-10%] rounded-full bg-brand-rose/20 blur-[120px]" />
+    <section id="hero-section" className="pt-24 border-b border-zinc-800 bg-black text-white">
+      {/* Huge Typographic Header */}
+      <div className="border-b border-zinc-800 py-12 px-6 sm:px-12 flex flex-col items-start justify-center">
+        <h1 className="font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[0.9] tracking-tighter uppercase w-full">
+          <div className="reveal" style={{ animationDelay: "100ms" }}>We Craft Premium</div>
+          <div className="reveal" style={{ animationDelay: "200ms" }}>Websites That</div>
+          <div className="reveal text-zinc-800 h-[1.15em] overflow-hidden relative" style={{ animationDelay: "300ms" }}>
+            <div
+              className={isTransitioning ? "flex flex-col transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)]" : "flex flex-col"}
+              style={{ transform: isTransitioning ? "translateY(-1.15em)" : "translateY(0)" }}
+            >
+              <div className="h-[1.15em] flex items-center leading-none">
+                {currentWord}
+              </div>
+              <div className="h-[1.15em] flex items-center leading-none">
+                {nextWord}
+              </div>
+            </div>
+          </div>
+        </h1>
+        <p className="mt-8 text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-5xl reveal font-sans" style={{ animationDelay: "400ms" }}>
+          We build high-converting, product-focused websites that turn your visitors into buyers. Next, our hyper-targeted ads and digital marketing launch your brand directly in front of active shoppers ready to purchase. Finally, we embed smart, data-backed SEO to drive compounding organic traffic to your site 24/7. Together, we combine premium web development with precision marketing to build you an unstoppable sales machine.
+        </p>
       </div>
 
-      <div className="relative z-10 flex max-w-4xl flex-col items-center reveal">
-        <span className="mb-6 inline-block rounded-full bg-white/50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-zinc-500 ring-1 ring-black/5 backdrop-blur-md">
-          Available for new projects
-        </span>
-        <h1 className="max-w-[20ch] text-balance text-5xl leading-none font-medium tracking-tight sm:text-6xl lg:text-7xl">
-          We build beautiful websites for ambitious products
-        </h1>
-        <p className="mt-8 max-w-[48ch] text-pretty text-lg text-zinc-600 lg:text-xl">
-          A boutique design studio crafting premium web experiences that turn attention into lasting
-          brand loyalty.
-        </p>
-        <div className="mt-10 flex items-center gap-4">
-          <a
-            href="#contact"
-            className="flex h-10 items-center rounded-full bg-brand-rose py-2 pr-3 pl-2 text-sm font-medium text-white ring-1 ring-brand-rose transition-transform hover:scale-[1.02] active:scale-[0.98]"
-          >
-            <svg className="mr-1.5 size-4 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
-            </svg>
-            Start a project
-          </a>
-          <a
-            href="#work"
-            className="flex h-10 items-center rounded-full bg-white/40 px-5 text-sm font-medium text-zinc-950 backdrop-blur-md ring-1 ring-black/5 transition-transform hover:scale-[1.02] active:scale-[0.98]"
-          >
-            View work
-          </a>
+      {/* Meta Bar */}
+      <div className="grid grid-cols-1 md:grid-cols-2 text-xs uppercase tracking-widest text-zinc-500 font-medium">
+        <div className="py-6 px-6 sm:px-12 md:border-r border-zinc-800 flex items-center gap-2">
+          <span className="text-white">©2026</span>
+          <span className="text-zinc-600">/</span>
+          <span>CREATING SINCE 2020</span>
+        </div>
+        <div className="py-6 px-6 sm:px-12 hidden md:flex items-center justify-end gap-2 text-zinc-400">
+          <span>AVAILABLE FOR CONTRACTS</span>
+          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
         </div>
       </div>
     </section>

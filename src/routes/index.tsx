@@ -1,27 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
-import { PortfolioGrid } from "@/components/portfolio/PortfolioGrid";
 import { Services } from "@/components/portfolio/Services";
-import { Process } from "@/components/portfolio/Process";
+import { PortfolioGrid } from "@/components/portfolio/PortfolioGrid";
 import { Testimonials } from "@/components/portfolio/Testimonials";
+import { ThoughtsList } from "@/components/portfolio/ThoughtsList";
 import { CTA } from "@/components/portfolio/CTA";
 import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumina Studio — Premium Web Design for Products" },
+      { title: "huaR — Software Engineer & Framer Creator" },
       {
         name: "description",
         content:
-          "Lumina Studio designs and builds beautiful, high-converting websites for ambitious product brands. Strategy, design, and engineering in one focused team.",
+          "Software engineer and Framer creator with a strong focus on building modern, scalable, and conversion-driven web experiences.",
       },
-      { property: "og:title", content: "Lumina Studio — Premium Web Design for Products" },
+      { property: "og:title", content: "huaR — Software Engineer & Framer Creator" },
       {
         property: "og:description",
         content:
-          "Beautiful, high-converting websites for ambitious product brands. Strategy, design, and engineering in one focused team.",
+          "Software engineer and Framer creator with a strong focus on building modern, scalable, and conversion-driven web experiences.",
       },
     ],
   }),
@@ -30,14 +30,14 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="mesh-gradient-bg min-h-screen font-sans text-zinc-950 antialiased selection:bg-brand-rose/20">
+    <div className="bg-black min-h-screen font-sans text-zinc-100 antialiased selection:bg-zinc-800 selection:text-white">
       <Nav />
       <main>
         <Hero />
-        <PortfolioGrid />
         <Services />
-        <Process />
+        <PortfolioGrid />
         <Testimonials />
+        <ThoughtsList />
         <CTA />
       </main>
       <Footer />

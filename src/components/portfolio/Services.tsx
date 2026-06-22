@@ -1,50 +1,64 @@
-const services = [
+import { ScrollRevealText } from "./ScrollRevealText";
+
+const servicesList = [
   {
-    title: "Strategy first",
-    body: "We define the narrative before we touch the canvas, ensuring every pixel serves a business objective.",
-    iconBg: "bg-brand-rose/10 ring-brand-rose/20",
-    iconColor: "text-brand-rose",
-    path: "M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3Z",
+    num: "01/",
+    title: "Website Migration",
+    items: ["Web Migration", "Optimization", "Framer Rebuild"],
   },
   {
-    title: "Visual fidelity",
-    body: "High-end aesthetics paired with functional precision, creating interfaces that feel as good as they look.",
-    iconBg: "bg-brand-amber/10 ring-brand-amber/20",
-    iconColor: "text-brand-amber",
-    path: "M2 4.25A2.25 2.25 0 0 1 4.25 2h7.5A2.25 2.25 0 0 1 14 4.25v7.5A2.25 2.25 0 0 1 11.75 14h-7.5A2.25 2.25 0 0 1 2 11.75v-7.5Z",
+    num: "02/",
+    title: "Framer Templates",
+    items: ["Startup", "Agency", "SaaS"],
   },
   {
-    title: "Clean engineering",
-    body: "Responsive, accessible, and high-performance code built for the modern web ecosystem.",
-    iconBg: "bg-brand-cyan/10 ring-brand-cyan/20",
-    iconColor: "text-brand-cyan",
-    path: "M9.586 1.586A2 2 0 0 1 11 1h2a2 2 0 0 1 2 2v2a2 2 0 0 1-.586 1.414l-6.5 6.5a2 2 0 0 1-2.828 0L2.086 10.914a2 2 0 0 1 0-2.828l6.5-6.5Z",
+    num: "03/",
+    title: "Frontend Development",
+    items: ["UI Dev", "Responsive Layouts", "Web Performance"],
+  },
+  {
+    num: "04/",
+    title: "Product Consulting",
+    items: ["Product Direction", "Web Strategy", "Technical Guidance"],
   },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="px-6 py-24">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 max-w-xl">
-          <h2 className="text-4xl font-medium tracking-tight">What we do</h2>
-          <p className="mt-3 text-zinc-600">
-            End-to-end design and development, handled by one focused team.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
-          {services.map((service) => (
-            <div key={service.title} className="flex flex-col gap-4">
-              <div className={`flex size-10 items-center justify-center rounded-xl ring-1 ${service.iconBg}`}>
-                <svg className={`size-4 ${service.iconColor}`} viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                  <path d={service.path} fillRule="evenodd" clipRule="evenodd" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-medium tracking-tight">{service.title}</h3>
-              <p className="max-w-[35ch] text-pretty text-sm leading-relaxed text-zinc-600">{service.body}</p>
+    <section id="services" className="border-b border-zinc-800 bg-black text-white">
+      {/* Title Section */}
+      <div className="border-b border-zinc-800 p-6 sm:p-12">
+        <ScrollRevealText
+          text="Services"
+          className="text-3xl font-display font-bold uppercase tracking-wider text-white"
+        />
+      </div>
+
+      {/* Grid of Services */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        {servicesList.map((service, index) => (
+          <div
+            key={service.title}
+            className={`p-8 sm:p-12 flex flex-col justify-between min-h-[250px] border-b sm:border-b-0 border-zinc-800 ${
+              index < 3 ? "sm:border-r" : ""
+            } ${index === 1 ? "lg:border-r" : ""} ${index === 2 ? "lg:border-r" : ""}`}
+          >
+            <div>
+              <span className="font-mono text-xs text-zinc-600 block mb-6">{service.num}</span>
+              <h3 className="text-lg font-display font-bold uppercase tracking-wider text-white mb-8">
+                {service.title}
+              </h3>
             </div>
-          ))}
-        </div>
+            <div className="space-y-3">
+              {service.items.map((item) => (
+                <div key={item} className="flex items-center gap-2">
+                  <span className="h-1 w-1 bg-white rounded-full opacity-40" />
+                  <span className="text-zinc-400 text-sm font-sans tracking-wide">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

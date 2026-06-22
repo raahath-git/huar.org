@@ -1,28 +1,124 @@
+import { Link } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+
 export function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "Home", to: "/" },
+    { name: "About Us", to: "/#bio-section" },
+    { name: "Services", to: "/#services" },
+    { name: "Works", to: "/work" },
+    { name: "Blog", to: "/blog" },
+    { name: "Contact", to: "/#contact" },
+  ];
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
+    if (to.startsWith("/#")) {
+      const id = to.substring(2);
+      const element = document.getElementById(id);
+      if (element) {
+        e.preventDefault();
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsOpen(false);
+      }
+    }
+  };
+
   return (
-    <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
-      <div className="flex h-12 items-center gap-8 rounded-full bg-white/40 px-6 backdrop-blur-xl ring-1 ring-black/5">
-        <a href="#top" className="text-sm font-semibold tracking-tight">
-          Lumina Studio
-        </a>
-        <div className="hidden items-center gap-6 sm:flex">
-          <a href="#work" className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-950">
-            Work
-          </a>
-          <a href="#services" className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-950">
-            Services
-          </a>
-          <a href="#process" className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-950">
-            Process
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+        scrolled
+          ? "bg-[#111111]/95 border-[#27272a] backdrop-blur-md py-4"
+          : "bg-[#111111] border-[#27272a] backdrop-blur-sm py-6"
+      }`}
+      style={{ backgroundImage: "none" }}
+    >
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="hover:opacity-85 transition-opacity -ml-4"
+        >
+          <img
+            src="/logo-header.png"
+            alt="huaR logo"
+            className="h-7 w-auto object-contain"
+            style={{ filter: "invert(1)", mixBlendMode: "screen" }}
+          />
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.to}
+              onClick={(e) => handleLinkClick(e, link.to)}
+              className="text-xs uppercase tracking-widest font-medium text-[#a1a1aa] hover:text-[#f2efeb] transition-colors duration-200"
+              activeProps={{ className: "text-[#f2efeb]" }}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="hidden md:block">
+          <a
+            href="mailto:mejed@huar.io"
+            className="border border-[#27272a] hover:border-[#f2efeb] px-5 py-2 text-xs uppercase tracking-widest font-semibold text-[#f2efeb] bg-transparent transition-all duration-300 active:scale-95"
+          >
+            Let's Talk
           </a>
         </div>
-        <a
-          href="#contact"
-          className="flex h-8 items-center rounded-full bg-zinc-950 px-4 text-sm font-medium text-zinc-50 ring-1 ring-zinc-950 transition-transform hover:scale-[1.02] active:scale-[0.98]"
+
+        {/* Mobile Toggle */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-[#a1a1aa] hover:text-[#f2efeb] transition-colors"
+          aria-label="Toggle menu"
         >
-          Contact
-        </a>
+          {isOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden fixed inset-0 top-[69px] bg-[#111111] z-40 border-t border-[#27272a] px-6 py-8 flex flex-col gap-6 animate-in fade-in duration-200">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.to}
+              onClick={(e) => handleLinkClick(e, link.to)}
+              className="text-lg font-display uppercase tracking-widest font-semibold text-[#a1a1aa] hover:text-[#f2efeb] transition-colors py-2 border-b border-[#27272a]"
+              activeProps={{ className: "text-[#f2efeb] border-[#f2efeb]" }}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <a
+            href="mailto:mejed@huar.io"
+            className="border border-[#27272a] hover:border-[#f2efeb] py-3 text-center text-sm uppercase tracking-widest font-semibold text-[#f2efeb] bg-transparent transition-all duration-300 mt-4"
+          >
+            Let's Talk
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
