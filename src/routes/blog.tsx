@@ -76,7 +76,7 @@ function BlogPage() {
         <section className="border-b border-zinc-800 px-6 sm:px-12 py-16 sm:py-24">
           <div className="max-w-4xl space-y-6">
             <h1 className="font-display font-black text-5xl sm:text-6xl md:text-7xl uppercase tracking-wider text-white reveal">
-              My Brightest<br />Thoughts
+              Our Brightest<br />Thoughts
             </h1>
             <p className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl reveal" style={{ animationDelay: "200ms" }}>
               Discover ideas, perspectives, and creative thinking shaped by our work in brand identity and art direction. Each article explores how thoughtful design helps brands with clarity and intention.
@@ -100,7 +100,9 @@ function BlogPage() {
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-105 brightness-95"
+                    className={`h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-105 brightness-95 ${
+                      index < 3 ? "group-hover:sepia-[0.4] group-hover:saturate-[180%]" : ""
+                    }`}
                     loading="lazy"
                   />
                   <div className="absolute top-4 left-4 text-[10px] tracking-widest text-zinc-500 uppercase font-mono bg-black/80 px-2.5 py-1 backdrop-blur-sm">

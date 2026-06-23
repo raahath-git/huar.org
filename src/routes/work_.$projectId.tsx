@@ -33,29 +33,29 @@ const projectsData: Record<
     gallery: string[];
   }
 > = {
-  damas: {
-    id: "damas",
-    name: "Damas",
+  astral: {
+    id: "astral",
+    name: "Astral",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
-    desc: "Damas is a modern creative agency template built for bold visuals, smooth interactions, and standout storytelling. Perfect for agencies, studios, and creators who want a polished, high impact online presence without starting from scratch.",
+    desc: "Astral is a modern creative agency template built for bold visuals, smooth interactions, and standout storytelling. Perfect for agencies, studios, and creators who want a polished, high impact online presence without starting from scratch.",
     mainImage: "https://framerusercontent.com/images/VNXQLcPHw9VbVzy6BDpZ8pUsaU.png?width=1160&height=800",
     sections: [
       {
         title: "About the Template",
         content:
-          "Damas is a refined digital template crafted for modern brands that value clarity, elegance, and strong visual presence. Built with versatility in mind, it adapts seamlessly across industries—whether for studios, agencies, or product-focused businesses looking to elevate their online identity.",
+          "Astral is a refined digital template crafted for modern brands that value clarity, elegance, and strong visual presence. Built with versatility in mind, it adapts seamlessly across industries—whether for studios, agencies, or product-focused businesses looking to elevate their online identity.",
       },
       {
         title: "Designing for Impact, Built for Flexibility",
         content:
-          "The goal behind Damas was to create a system that doesn’t just look good, but performs. Every section is intentionally structured to guide attention, highlight key content, and support storytelling without overwhelming the user. The result is a template that feels confident, clean, and highly adaptable.",
+          "The goal behind Astral was to create a system that doesn’t just look good, but performs. Every section is intentionally structured to guide attention, highlight key content, and support storytelling without overwhelming the user. The result is a template that feels confident, clean, and highly adaptable.",
       },
       {
         title: "Visual Language",
         content:
-          "Damas uses a minimal yet striking visual approach. Strong typography anchors the layout, while generous spacing and structured grids create rhythm and clarity. The color system is intentionally restrained, allowing brands to easily customize while maintaining a polished and cohesive look. Subtle contrasts and refined alignments bring a sense of precision, helping content stand out without unnecessary decoration.",
+          "Astral uses a minimal yet striking visual approach. Strong typography anchors the layout, while generous spacing and structured grids create rhythm and clarity. The color system is intentionally restrained, allowing brands to easily customize while maintaining a polished and cohesive look. Subtle contrasts and refined alignments bring a sense of precision, helping content stand out without unnecessary decoration.",
       },
       {
         title: "Structured Storytelling",
@@ -65,17 +65,17 @@ const projectsData: Record<
       {
         title: "Built for Real Use",
         content:
-          "Beyond aesthetics, Damas is highly practical. It’s optimized for performance, responsiveness, and ease of editing inside Framer. Every component is reusable and scalable, allowing creators to expand pages, adjust layouts, and maintain consistency without friction.",
+          "Beyond aesthetics, Astral is highly practical. It’s optimized for performance, responsiveness, and ease of editing inside Framer. Every component is reusable and scalable, allowing creators to expand pages, adjust layouts, and maintain consistency without friction.",
       },
       {
         title: "A Foundation for Growth",
         content:
-          "Damas is more than a template—it’s a system designed to evolve with the brand using it. Whether expanding content, launching new services, or refining positioning, the structure supports growth without losing visual integrity.",
+          "Astral is more than a template—it’s a system designed to evolve with the brand using it. Whether expanding content, launching new services, or refining positioning, the structure supports growth without losing visual integrity.",
       },
       {
         title: "Clarity that Scales with You",
         content:
-          "Every element within Damas is crafted to serve a purpose—bringing together design and function in a way that feels effortless. It empowers brands to present themselves with confidence, precision, and lasting impact.",
+          "Every element within Astral is crafted to serve a purpose—bringing together design and function in a way that feels effortless. It empowers brands to present themselves with confidence, precision, and lasting impact.",
       },
     ],
     gallery: [
@@ -84,9 +84,9 @@ const projectsData: Record<
       "https://framerusercontent.com/images/rRp1KaDwStpJ6Pxo05Doj1IjSU.png?width=1066&height=800",
     ],
   },
-  najm: {
-    id: "najm",
-    name: "Najm",
+  equinox: {
+    id: "equinox",
+    name: "Equinox",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
@@ -96,37 +96,37 @@ const projectsData: Record<
       {
         title: "About the Template",
         content:
-          "Najm is a bold, forward-looking digital template designed for brands that want to stand out with clarity and presence. Inspired by the idea of a “guiding star,” it focuses on strong visual direction, confident layouts, and a sense of movement that naturally draws attention. Built for modern creators, studios, and startups, Najm provides a foundation that feels dynamic yet controlled—allowing brands to communicate their identity with precision and energy.",
+          "Equinox is a bold, forward-looking digital template designed for brands that want to stand out with clarity and presence. Inspired by the idea of a “guiding star,” it focuses on strong visual direction, confident layouts, and a sense of movement that naturally draws attention. Built for modern creators, studios, and startups, Equinox provides a foundation that feels dynamic yet controlled—allowing brands to communicate their identity with precision and energy.",
       },
       {
         title: "A Guiding Presence, Built to Lead",
         content:
-          "The concept behind Najm was to create a template that leads rather than follows. Every layout decision is intentional, guiding users through content in a way that feels natural and engaging. It balances bold expression with thoughtful structure, resulting in an experience that is both impactful and easy to navigate.",
+          "The concept behind Equinox was to create a template that leads rather than follows. Every layout decision is intentional, guiding users through content in a way that feels natural and engaging. It balances bold expression with thoughtful structure, resulting in an experience that is both impactful and easy to navigate.",
       },
       {
         title: "Visual Language",
         content:
-          "Najm embraces contrast and depth. Strong typography, layered compositions, and carefully used spacing create a sense of hierarchy and motion. The design system allows for expressive visuals while maintaining a clean and organized framework. Light and dark interplay, combined with sharp alignments, gives the template a modern, almost cinematic feel—perfect for brands that want a striking digital presence.",
+          "Equinox embraces contrast and depth. Strong typography, layered compositions, and carefully used spacing create a sense of hierarchy and motion. The design system allows for expressive visuals while maintaining a clean and organized framework. Light and dark interplay, combined with sharp alignments, gives the template a modern, almost cinematic feel—perfect for brands that want a striking digital presence.",
       },
       {
         title: "Dynamic Storytelling",
         content:
-          "The flow of Najm is built to capture attention and maintain it. Sections transition smoothly, encouraging users to explore further while keeping the experience intuitive. It supports a wide range of content—from portfolios to product highlights—without losing clarity. This approach helps transform static content into a narrative that feels alive and engaging.",
+          "The flow of Equinox is built to capture attention and maintain it. Sections transition smoothly, encouraging users to explore further while keeping the experience intuitive. It supports a wide range of content—from portfolios to product highlights—without losing clarity. This approach helps transform static content into a narrative that feels alive and engaging.",
       },
       {
         title: "Built for Creators",
         content:
-          "Najm is designed with flexibility at its core. Fully responsive and easy to customize in Framer, it allows creators to adapt layouts, experiment with visuals, and scale their content effortlessly. Each component is built to be modular and reusable, making it simple to maintain consistency while evolving the design.",
+          "Equinox is designed with flexibility at its core. Fully responsive and easy to customize in Framer, it allows creators to adapt layouts, experiment with visuals, and scale their content effortlessly. Each component is built to be modular and reusable, making it simple to maintain consistency while evolving the design.",
       },
       {
         title: "A System That Evolves",
         content:
-          "Najm is not just about making a strong first impression—it’s about sustaining it. As brands grow and their needs expand, the template continues to support new ideas, content, and directions without losing its identity.",
+          "Equinox is not just about making a strong first impression—it’s about sustaining it. As brands grow and their needs expand, the template continues to support new ideas, content, and directions without losing its identity.",
       },
       {
         title: "Designed to Guide, Built to Last",
         content:
-          "Every element in Najm works together to create a clear, confident presence. It gives brands the tools to express themselves boldly while staying grounded in structure—resulting in a digital experience that feels both powerful and refined.",
+          "Every element in Equinox works together to create a clear, confident presence. It gives brands the tools to express themselves boldly while staying grounded in structure—resulting in a digital experience that feels both powerful and refined.",
       },
     ],
     gallery: [
@@ -135,49 +135,49 @@ const projectsData: Record<
       "https://framerusercontent.com/images/ixj3l3ntKSbk66sf6KZmqHxXWi0.jpeg?width=1400&height=950",
     ],
   },
-  kavi: {
-    id: "kavi",
-    name: "Kavi",
+  vesta: {
+    id: "vesta",
+    name: "Vesta",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
-    desc: "Kavi is a bold and modern website template made for SaaS and AI startups looking to launch fast and scale smarter with clean design and intuitive customization.",
+    desc: "Vesta is a bold and modern website template made for SaaS and AI startups looking to launch fast and scale smarter with clean design and intuitive customization.",
     mainImage: "https://framerusercontent.com/images/I3azeVtkvdKBGl9TX38tUdXEb0.png?width=1160&height=800",
     sections: [
       {
         title: "About the Brand",
         content:
-          "Kavi is a refined, expressive digital template inspired by creativity, rhythm, and artistic flow. Designed for brands that value storytelling and visual emotion, it creates a space where content feels curated rather than simply arranged. Built for creatives, studios, and personal brands, Kavi blends structure with artistic freedom—allowing each project to feel distinctive while maintaining a cohesive identity.",
+          "Vesta is a refined, expressive digital template inspired by creativity, rhythm, and artistic flow. Designed for brands that value storytelling and visual emotion, it creates a space where content feels curated rather than simply arranged. Built for creatives, studios, and personal brands, Vesta blends structure with artistic freedom—allowing each project to feel distinctive while maintaining a cohesive identity.",
       },
       {
         title: "An Artistic Flow",
         content:
-          "The vision behind Kavi was to craft a template that feels less rigid and more intuitive. It embraces movement, pacing, and composition to guide users through content in a way that feels natural and engaging.",
+          "The vision behind Vesta was to craft a template that feels less rigid and more intuitive. It embraces movement, pacing, and composition to guide users through content in a way that feels natural and engaging.",
       },
       {
         title: "Visual Language",
         content:
-          "Kavi uses a soft yet expressive visual system. Layered compositions, balanced whitespace, and elegant typography create a sense of rhythm across the layout. The design allows for visual experimentation while maintaining harmony and clarity. Subtle contrasts and refined details give each section depth, making the overall experience feel rich without being overwhelming.",
+          "Vesta uses a soft yet expressive visual system. Layered compositions, balanced whitespace, and elegant typography create a sense of rhythm across the layout. The design allows for visual experimentation while maintaining harmony and clarity. Subtle contrasts and refined details give each section depth, making the overall experience feel rich without being overwhelming.",
       },
       {
         title: "Narrative-Driven Design",
         content:
-          "The structure of Kavi is built around storytelling. Content flows in a way that encourages exploration, allowing each section to reveal itself gradually. This creates a more engaging and memorable journey for the user. It’s especially effective for showcasing portfolios, creative work, and brands that rely on emotion and identity.",
+          "The structure of Vesta is built around storytelling. Content flows in a way that encourages exploration, allowing each section to reveal itself gradually. This creates a more engaging and memorable journey for the user. It’s especially effective for showcasing portfolios, creative work, and brands that rely on emotion and identity.",
       },
       {
         title: "Built for Creative Freedom",
         content:
-          "Kavi is designed to be flexible and easy to customize in Framer. Its modular components allow creators to rearrange layouts, adapt styles, and expand content without losing consistency.",
+          "Vesta is designed to be flexible and easy to customize in Framer. Its modular components allow creators to rearrange layouts, adapt styles, and expand content without losing consistency.",
       },
       {
         title: "A Canvas for Growth",
         content:
-          "Kavi is more than a template—it’s a creative framework that evolves with the work it presents. As projects grow and ideas expand, it continues to support new expressions and directions.",
+          "Vesta is more than a template—it’s a creative framework that evolves with the work it presents. As projects grow and ideas expand, it continues to support new expressions and directions.",
       },
       {
         title: "Design that Moves with You",
         content:
-          "Every element in Kavi is crafted to enhance creativity and storytelling. It gives brands the ability to present their work with depth, emotion, and clarity—creating a digital presence that feels both personal and impactful.",
+          "Every element in Vesta is crafted to enhance creativity and storytelling. It gives brands the ability to present their work with depth, emotion, and clarity—creating a digital presence that feels both personal and impactful.",
       },
     ],
     gallery: [
@@ -186,9 +186,9 @@ const projectsData: Record<
       "https://framerusercontent.com/images/Ks48TT9awwpT9gdcWgZd8ev1WY.webp?width=1600&height=1200",
     ],
   },
-  sham: {
-    id: "sham",
-    name: "Sham",
+  caelum: {
+    id: "caelum",
+    name: "Caelum",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
@@ -198,37 +198,37 @@ const projectsData: Record<
       {
         title: "About the Brand",
         content:
-          "Sham is a warm, expressive digital template inspired by culture, light, and storytelling. Rooted in a sense of familiarity and depth, it’s designed for brands that want to feel human, grounded, and visually rich without losing clarity. Whether used for creative studios, personal brands, or cultural projects, Sham creates an atmosphere that feels inviting and memorable—where content is not just presented, but experienced.",
+          "Caelum is a warm, expressive digital template inspired by culture, light, and storytelling. Rooted in a sense of familiarity and depth, it’s designed for brands that want to feel human, grounded, and visually rich without losing clarity. Whether used for creative studios, personal brands, or cultural projects, Caelum creates an atmosphere that feels inviting and memorable—where content is not just presented, but experienced.",
       },
       {
         title: "Where Warmth Meets Expression",
         content:
-          "The idea behind Sham was to move beyond purely minimal design and introduce emotion into the experience. It blends structure with softness, allowing visuals, typography, and spacing to work together in a way that feels natural and fluid.",
+          "The idea behind Caelum was to move beyond purely minimal design and introduce emotion into the experience. It blends structure with softness, allowing visuals, typography, and spacing to work together in a way that feels natural and fluid.",
       },
       {
         title: "Visual Language",
         content:
-          "Sham leans into warm tones, soft contrasts, and expressive layouts. The design system balances editorial-style typography with relaxed spacing, creating a rhythm that feels both intentional and effortless. Subtle layering and organic flow give the interface a sense of depth, making each section feel connected rather than isolated.",
+          "Caelum leans into warm tones, soft contrasts, and expressive layouts. The design system balances editorial-style typography with relaxed spacing, creating a rhythm that feels both intentional and effortless. Subtle layering and organic flow give the interface a sense of depth, making each section feel connected rather than isolated.",
       },
       {
         title: "Emotional Storytelling",
         content:
-          "More than just structure, Sham is built to convey feeling. It encourages the use of imagery, narrative, and pacing to create a deeper connection with the audience. Sections unfold naturally, allowing stories to breathe while maintaining clarity. This makes it especially effective for brands that rely on narrative, identity, and personal touch.",
+          "More than just structure, Caelum is built to convey feeling. It encourages the use of imagery, narrative, and pacing to create a deeper connection with the audience. Sections unfold naturally, allowing stories to breathe while maintaining clarity. This makes it especially effective for brands that rely on narrative, identity, and personal touch.",
       },
       {
         title: "Crafted for Flexibility",
         content:
-          "Despite its expressive nature, Sham remains highly functional. Fully responsive and easy to customize in Framer, it allows creators to adapt the mood, colors, and layouts to match their vision. Components are designed to be flexible and reusable, supporting both simple pages and more layered storytelling.",
+          "Despite its expressive nature, Caelum remains highly functional. Fully responsive and easy to customize in Framer, it allows creators to adapt the mood, colors, and layouts to match their vision. Components are designed to be flexible and reusable, supporting both simple pages and more layered storytelling.",
       },
       {
         title: "A Living System",
         content:
-          "Sham is designed to grow alongside the brand it represents. As content evolves and stories expand, the template provides a consistent yet flexible foundation to build on.",
+          "Caelum is designed to grow alongside the brand it represents. As content evolves and stories expand, the template provides a consistent yet flexible foundation to build on.",
       },
       {
         title: "Design that Connects and Lasts",
         content:
-          "Every element in Sham works to create a sense of connection—between brand and audience, structure and emotion. It’s a system that doesn’t just showcase content, but brings it to life with warmth, depth, and intention.",
+          "Every element in Caelum works to create a sense of connection—between brand and audience, structure and emotion. It’s a system that doesn’t just showcase content, but brings it to life with warmth, depth, and intention.",
       },
     ],
     gallery: [
@@ -237,9 +237,9 @@ const projectsData: Record<
       "https://framerusercontent.com/images/Kwfcsb5AKYGhAjNC9ZFvtVn7cU.webp?width=1600&height=1200",
     ],
   },
-  abjad: {
-    id: "abjad",
-    name: "Abjad",
+  irsa: {
+    id: "irsa",
+    name: "Irsa",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
@@ -249,17 +249,17 @@ const projectsData: Record<
       {
         title: "About the Brand",
         content:
-          "Abjad is a typography-driven digital template built for brands that see words as their strongest visual asset. Inspired by language, rhythm, and editorial design, it focuses on clarity of message while turning content into a compelling visual experience. Designed for studios, writers, and modern brands, Abjad creates a space where typography leads and design supports—resulting in a presence that feels intelligent, expressive, and intentional.",
+          "Irsa is a typography-driven digital template built for brands that see words as their strongest visual asset. Inspired by language, rhythm, and editorial design, it focuses on clarity of message while turning content into a compelling visual experience. Designed for studios, writers, and modern brands, Irsa creates a space where typography leads and design supports—resulting in a presence that feels intelligent, expressive, and intentional.",
       },
       {
         title: "Where Words Become Visual",
         content:
-          "The idea behind Abjad was to elevate text from simple communication to a central design element. Every layout is crafted to highlight hierarchy, pacing, and readability, allowing content to naturally guide the user’s attention. It’s a system that feels calm yet confident, minimal yet deeply expressive.",
+          "The idea behind Irsa was to elevate text from simple communication to a central design element. Every layout is crafted to highlight hierarchy, pacing, and readability, allowing content to naturally guide the user’s attention. It’s a system that feels calm yet confident, minimal yet deeply expressive.",
       },
       {
         title: "Visual Language",
         content:
-          "Abjad centers around strong typographic hierarchy. Carefully selected font pairings, balanced line lengths, and intentional spacing create a rhythm that feels editorial and refined.",
+          "Irsa centers around strong typographic hierarchy. Carefully selected font pairings, balanced line lengths, and intentional spacing create a rhythm that feels editorial and refined.",
       },
     ],
     gallery: [
@@ -268,29 +268,29 @@ const projectsData: Record<
       "https://framerusercontent.com/images/f5mIs8ybPXTLDkmTnN1bJL3xaU.webp?width=1600&height=1200",
     ],
   },
-  fasselh: {
-    id: "fasselh",
-    name: "Faseelh",
+  rah: {
+    id: "rah",
+    name: "Rah",
     category: "Free Framer Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
-    desc: "Faseelh is a sleek, nature-inspired Framer template built for environmental projects, nonprofits, and sustainability-driven brands. It features immersive visuals, smooth animations, and flexible sections that make storytelling easy.",
+    desc: "Rah is a sleek, nature-inspired Framer template built for environmental projects, nonprofits, and sustainability-driven brands. It features immersive visuals, smooth animations, and flexible sections that make storytelling easy.",
     mainImage: "https://framerusercontent.com/images/IBHqRDPghoZPLzWsGC2SWmPo.png?width=1160&height=800",
     sections: [
       {
         title: "About the Brand",
         content:
-          "Faseelh is a clean, modular digital template built around clarity, structure, and precision. Designed for modern brands that value organization and scalability, it offers a system that feels solid, reliable, and effortlessly adaptable across different use cases. From agencies to product-focused startups, Faseelh provides a strong foundation where content is clearly structured and easy to navigate—without sacrificing visual appeal.",
+          "Rah is a clean, modular digital template built around clarity, structure, and precision. Designed for modern brands that value organization and scalability, it offers a system that feels solid, reliable, and effortlessly adaptable across different use cases. From agencies to product-focused startups, Rah provides a strong foundation where content is clearly structured and easy to navigate—without sacrificing visual appeal.",
       },
       {
         title: "Built on Structure, Simplifying Complexity",
         content:
-          "The core idea behind Faseelh was to create a template that simplifies complexity. Every section is thoughtfully organized, allowing information to be presented in a way that feels intuitive and easy to follow.",
+          "The core idea behind Rah was to create a template that simplifies complexity. Every section is thoughtfully organized, allowing information to be presented in a way that feels intuitive and easy to follow.",
       },
       {
         title: "Visual Language",
         content:
-          "Faseelh uses a structured grid system combined with clean typography and balanced spacing. The visual approach is minimal yet purposeful, ensuring that every element has a clear role within the layout. A neutral, adaptable color system allows brands to customize the look while preserving consistency and professionalism across all pages.",
+          "Rah uses a structured grid system combined with clean typography and balanced spacing. The visual approach is minimal yet purposeful, ensuring that every element has a clear role within the layout. A neutral, adaptable color system allows brands to customize the look while preserving consistency and professionalism across all pages.",
       },
     ],
     gallery: [
@@ -420,7 +420,7 @@ function WorkDetailPage() {
                     src={p.mainImage}
                     alt={p.name}
                     className={`h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-110 brightness-95 ${
-                      p.id === "sham" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
+                      p.id === "caelum" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
                     }`}
                     loading="lazy"
                   />

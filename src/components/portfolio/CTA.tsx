@@ -5,13 +5,14 @@ export function CTA() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    contact: "",
     project: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.project) {
+    if (!formData.name || !formData.email || !formData.contact || !formData.project) {
       toast.error("Please fill in all fields.");
       return;
     }
@@ -20,13 +21,13 @@ export function CTA() {
     // Simulate submission
     setTimeout(() => {
       toast.success("Thank you! Your message has been sent successfully.");
-      setFormData({ name: "", email: "", project: "" });
+      setFormData({ name: "", email: "", contact: "", project: "" });
       setIsSubmitting(false);
     }, 1000);
   };
 
   return (
-    <section id="contact" className="border-b border-[#27272a] bg-[#111111] text-[#f2efeb]" style={{ backgroundImage: "none" }}>
+    <section id="contact" className="scroll-mt-20 border-b border-[#27272a] bg-[#111111] text-[#f2efeb]" style={{ backgroundImage: "none" }}>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         {/* Left Column: Heading */}
         <div className="lg:col-span-5 p-6 sm:p-12 border-b lg:border-b-0 lg:border-r border-[#27272a] flex flex-col justify-between gap-8">
@@ -71,6 +72,21 @@ export function CTA() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="Where can we reach you?"
+                className="w-full bg-[#f2efeb] border border-[#dbd9d6] hover:border-[#a1a1aa] focus:border-[#111111] focus:outline-none p-4 text-sm font-sans tracking-wide text-[#111111] transition-colors placeholder-[#71717a]"
+                required
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="contact" className="text-xs uppercase tracking-widest font-semibold text-[#a1a1aa] block font-mono">
+                / Contact
+              </label>
+              <input
+                type="tel"
+                id="contact"
+                value={formData.contact}
+                onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                placeholder="Your contact number..."
                 className="w-full bg-[#f2efeb] border border-[#dbd9d6] hover:border-[#a1a1aa] focus:border-[#111111] focus:outline-none p-4 text-sm font-sans tracking-wide text-[#111111] transition-colors placeholder-[#71717a]"
                 required
               />

@@ -19,26 +19,49 @@ export function ScrollRevealText({ text, className = "" }: ScrollRevealTextProps
     const container = containerRef.current;
     if (!container) return;
 
+    let isVisible = false;
+    let scheduledAnimationFrame = false;
+
     const handleScroll = () => {
-      const rect = container.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+      if (!isVisible) return;
+      if (scheduledAnimationFrame) return;
 
-      // Start revealing when the top of the heading is at the bottom of the viewport
-      // Complete the reveal when the heading is at 35% of the viewport height (scrolled into clear view)
-      const start = windowHeight;
-      const end = windowHeight * 0.35;
+      scheduledAnimationFrame = true;
+      requestAnimationFrame(() => {
+        const rect = container.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
-      const progress = Math.max(0, Math.min(1, (start - rect.top) / (start - end)));
-      container.style.setProperty("--scroll-progress", progress.toString());
+        const start = windowHeight;
+        const end = windowHeight * 0.35;
+
+        const progress = Math.max(0, Math.min(1, (start - rect.top) / (start - end)));
+        container.style.setProperty("--scroll-progress", progress.toString());
+        
+        scheduledAnimationFrame = false;
+      });
     };
 
-    // Initialize position
-    handleScroll();
+    // Use IntersectionObserver to only compute scroll when element is near viewport
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+        if (isVisible) {
+          handleScroll();
+        }
+      },
+      { rootMargin: "100px 0px 100px 0px" } // trigger slightly before entering viewport
+    );
+
+    observer.observe(container);
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("resize", handleScroll, { passive: true });
 
+    // Initial check
+    handleScroll();
+
     return () => {
+      observer.disconnect();
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
     };

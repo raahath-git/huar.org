@@ -110,7 +110,8 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="bg-black text-zinc-100 antialiased selection:bg-zinc-800 selection:text-white min-h-screen">
+      <body className="bg-black text-zinc-100 antialiased selection:bg-zinc-800 selection:text-white min-h-screen relative">
+        <div className="pointer-events-none fixed inset-0 z-50 bg-[url('/bg-texture.png')] bg-repeat mix-blend-multiply opacity-100" />
         {children}
         <Scripts />
       </body>

@@ -25,7 +25,7 @@ const servicesList = [
 
 export function Services() {
   return (
-    <section id="services" className="border-b border-zinc-800 bg-black text-white">
+    <section id="services" className="scroll-mt-20 border-b border-zinc-800 bg-black text-white">
       {/* Title Section */}
       <div className="border-b border-zinc-800 p-6 sm:p-12">
         <ScrollRevealText

@@ -46,7 +46,7 @@ export function Hero() {
             </div>
           </div>
         </h1>
-        <p className="mt-8 text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-5xl reveal font-sans" style={{ animationDelay: "400ms" }}>
+        <p className="mt-8 text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-5xl reveal font-sans text-justify" style={{ animationDelay: "400ms" }}>
           We build high-converting, product-focused websites that turn your visitors into buyers. Next, our hyper-targeted ads and digital marketing launch your brand directly in front of active shoppers ready to purchase. Finally, we embed smart, data-backed SEO to drive compounding organic traffic to your site 24/7. Together, we combine premium web development with precision marketing to build you an unstoppable sales machine.
         </p>
       </div>

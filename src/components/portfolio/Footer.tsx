@@ -5,7 +5,9 @@ export function Footer() {
     const element = document.getElementById(id);
     if (element) {
       e.preventDefault();
-      element.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -80; // Offset for sticky header
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
@@ -35,13 +37,7 @@ export function Footer() {
             >
               Home
             </Link>
-            <Link
-              to="/"
-              onClick={(e) => handleScrollToSection(e, "bio-section")}
-              className="text-zinc-400 hover:text-white transition-colors duration-200"
-            >
-              About Us
-            </Link>
+
             <Link
               to="/"
               onClick={(e) => handleScrollToSection(e, "services")}
@@ -61,13 +57,6 @@ export function Footer() {
             >
               Blog
             </Link>
-            <Link
-              to="/"
-              onClick={(e) => handleScrollToSection(e, "contact")}
-              className="text-zinc-400 hover:text-white transition-colors duration-200"
-            >
-              Contact
-            </Link>
           </div>
         </div>
 
@@ -76,16 +65,22 @@ export function Footer() {
           <div className="text-zinc-600 font-mono text-xs uppercase tracking-widest">
             / Contact
           </div>
-          <div className="space-y-4">
+          <div className="space-y-6">
             <a
-              href="mailto:mejed@huar.io"
+              href="mailto:huar.org@gmail.com"
               className="text-sm font-sans text-zinc-400 hover:text-white transition-colors duration-200 block break-all font-medium"
             >
-              mejed@huar.io
+              huar.org@gmail.com
             </a>
-            <div className="text-zinc-500 text-[10px] leading-relaxed tracking-wider font-sans uppercase">
-              Syria, Damascus<br />
-              GMT +3
+            <div className="space-y-3">
+              <div className="text-zinc-500 text-[10px] leading-relaxed tracking-wider font-sans uppercase">
+                TN, India<br />
+                GMT +05:30
+              </div>
+              <div className="text-zinc-500 text-[10px] leading-relaxed tracking-wider font-sans uppercase">
+                Dubai, UAE<br />
+                GMT +4
+              </div>
             </div>
           </div>
         </div>
@@ -98,14 +93,14 @@ export function Footer() {
           <img
             src="/logo.png"
             alt="huaR brand logo"
-            className="h-8 w-auto object-contain mix-blend-multiply"
+            className="h-6 w-auto object-contain mix-blend-multiply"
           />
         </Link>
 
         {/* Social Links */}
         <div className="flex flex-wrap justify-center gap-6 text-[10px] tracking-[0.2em] font-semibold text-zinc-400">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/huar-org"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors duration-200"

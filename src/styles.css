@@ -138,13 +138,8 @@ html {
     border-color: var(--color-border);
   }
 
-  body, .bg-black, .bg-zinc-950, .bg-zinc-900 {
-    background-color: var(--color-background);
-    background-image: url("/bg-texture.png");
-    background-repeat: repeat;
-  }
-
   body {
+    background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
   }

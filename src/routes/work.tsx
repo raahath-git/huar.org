@@ -8,7 +8,7 @@ export const Route = createFileRoute("/work")({
       { title: "Projects — huaR" },
       {
         name: "description",
-        content: "A showcase of my latest projects, highlighting thoughtful design, clear strategy, and impactful results.",
+        content: "A showcase of our latest projects, highlighting thoughtful design, clear strategy, and impactful results.",
       },
     ],
   }),
@@ -17,38 +17,38 @@ export const Route = createFileRoute("/work")({
 
 const projects = [
   {
-    id: "damas",
-    name: "Damas",
+    id: "astral",
+    name: "Astral",
     category: "Agency Framer Template",
     image: "https://framerusercontent.com/images/VNXQLcPHw9VbVzy6BDpZ8pUsaU.png?width=1160&height=800",
   },
   {
-    id: "najm",
-    name: "Najm",
+    id: "equinox",
+    name: "Equinox",
     category: "SaaS Framer Template",
     image: "https://framerusercontent.com/images/WgEHVRrQs62rgxlzrnXJJ8rr4.png?width=1160&height=800",
   },
   {
-    id: "kavi",
-    name: "Kavi",
+    id: "vesta",
+    name: "Vesta",
     category: "AI Framer Template",
     image: "https://framerusercontent.com/images/I3azeVtkvdKBGl9TX38tUdXEb0.png?width=1160&height=800",
   },
   {
-    id: "sham",
-    name: "Sham",
+    id: "caelum",
+    name: "Caelum",
     category: "Studio Framer Template",
     image: "https://framerusercontent.com/images/e3DxUGJWqt7CIVVQIA0VZoy09FQ.png?width=1160&height=800",
   },
   {
-    id: "abjad",
-    name: "Abjad",
+    id: "irsa",
+    name: "Irsa",
     category: "AI Framer Template",
     image: "https://framerusercontent.com/images/l08IN6OxWS7DxFD28fNZXjCT4.png?width=1160&height=800",
   },
   {
-    id: "fasselh",
-    name: "Faseelh",
+    id: "rah",
+    name: "Rah",
     category: "Environmental Framer Template",
     image: "https://framerusercontent.com/images/IBHqRDPghoZPLzWsGC2SWmPo.png?width=1160&height=800",
   },
@@ -63,10 +63,10 @@ function WorkPage() {
         <section className="border-b border-zinc-800 px-6 sm:px-12 py-16 sm:py-24">
           <div className="max-w-4xl space-y-6">
             <h1 className="font-display font-black text-5xl sm:text-6xl md:text-7xl uppercase tracking-wider text-white reveal">
-              My Brightest<br />Creations
+              Our Brightest<br />Creations
             </h1>
             <p className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl reveal" style={{ animationDelay: "200ms" }}>
-              A showcase of my latest projects, highlighting thoughtful design, clear strategy, and impactful results.
+              A showcase of our latest projects, highlighting thoughtful design, clear strategy, and impactful results.
             </p>
           </div>
         </section>
@@ -88,7 +88,7 @@ function WorkPage() {
                     src={project.image}
                     alt={project.name}
                     className={`h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-110 brightness-95 group-hover:brightness-100 ${
-                      project.id === "sham" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
+                      project.id === "caelum" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
                     }`}
                     loading="lazy"
                   />

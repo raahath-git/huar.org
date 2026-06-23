@@ -1114,7 +1114,15 @@ function BlogDetailPage() {
                   <img
                     src={p.image}
                     alt={p.title}
-                    className="h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-110 brightness-95"
+                    className={`h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-110 brightness-95 ${
+                      [
+                        "how-can-designers-prepare-for-the-future",
+                        "why-every-business-needs-a-professional-website-in-2025",
+                        "how-creative-teams-build-strong-brand-systems"
+                      ].includes(p.id)
+                        ? "group-hover:sepia-[0.4] group-hover:saturate-[180%]"
+                        : ""
+                    }`}
                     loading="lazy"
                   />
                 </div>

@@ -20,11 +20,9 @@ export function Nav() {
 
   const navLinks = [
     { name: "Home", to: "/" },
-    { name: "About Us", to: "/#bio-section" },
     { name: "Services", to: "/#services" },
     { name: "Works", to: "/work" },
     { name: "Blog", to: "/blog" },
-    { name: "Contact", to: "/#contact" },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
@@ -33,7 +31,9 @@ export function Nav() {
       const element = document.getElementById(id);
       if (element) {
         e.preventDefault();
-        element.scrollIntoView({ behavior: "smooth" });
+        const yOffset = -80; // Offset for sticky header
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
         setIsOpen(false);
       }
     }
@@ -79,12 +79,13 @@ export function Nav() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <a
-            href="mailto:mejed@huar.io"
+          <Link
+            to="/#contact"
+            onClick={(e) => handleLinkClick(e, "/#contact")}
             className="border border-[#27272a] hover:border-[#f2efeb] px-5 py-2 text-xs uppercase tracking-widest font-semibold text-[#f2efeb] bg-transparent transition-all duration-300 active:scale-95"
           >
             Let's Talk
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -111,12 +112,13 @@ export function Nav() {
               {link.name}
             </Link>
           ))}
-          <a
-            href="mailto:mejed@huar.io"
+          <Link
+            to="/#contact"
+            onClick={(e) => handleLinkClick(e, "/#contact")}
             className="border border-[#27272a] hover:border-[#f2efeb] py-3 text-center text-sm uppercase tracking-widest font-semibold text-[#f2efeb] bg-transparent transition-all duration-300 mt-4"
           >
             Let's Talk
-          </a>
+          </Link>
         </div>
       )}
     </nav>

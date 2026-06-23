@@ -3,26 +3,26 @@ import { ScrollRevealText } from "./ScrollRevealText";
 
 const featuredProjects = [
   {
-    id: "damas",
-    name: "Damas",
+    id: "astral",
+    name: "Astral",
     category: "Agency Framer Template",
     image: "https://framerusercontent.com/images/VNXQLcPHw9VbVzy6BDpZ8pUsaU.png?width=1160&height=800",
   },
   {
-    id: "najm",
-    name: "Najm",
+    id: "equinox",
+    name: "Equinox",
     category: "SaaS Framer Template",
     image: "https://framerusercontent.com/images/WgEHVRrQs62rgxlzrnXJJ8rr4.png?width=1160&height=800",
   },
   {
-    id: "kavi",
-    name: "Kavi",
+    id: "vesta",
+    name: "Vesta",
     category: "AI Framer Template",
     image: "https://framerusercontent.com/images/I3azeVtkvdKBGl9TX38tUdXEb0.png?width=1160&height=800",
   },
   {
-    id: "sham",
-    name: "Sham",
+    id: "caelum",
+    name: "Caelum",
     category: "Studio Framer Template",
     image: "https://framerusercontent.com/images/e3DxUGJWqt7CIVVQIA0VZoy09FQ.png?width=1160&height=800",
   },
@@ -30,7 +30,7 @@ const featuredProjects = [
 
 export function PortfolioGrid() {
   return (
-    <section id="work" className="border-b border-zinc-800 bg-black text-white">
+    <section id="work" className="scroll-mt-20 border-b border-zinc-800 bg-black text-white">
       {/* Title Section */}
       <div className="border-b border-zinc-800 p-6 sm:p-12 flex items-center justify-between">
         <ScrollRevealText
@@ -72,7 +72,7 @@ export function PortfolioGrid() {
                 src={project.image}
                 alt={project.name}
                 className={`h-full w-full object-cover transition-[transform,filter] duration-700 group-hover:scale-102 filter grayscale group-hover:grayscale-0 contrast-110 brightness-95 group-hover:brightness-100 ${
-                  project.id === "sham" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
+                  project.id === "caelum" ? "group-hover:sepia-[.6] group-hover:saturate-150" : ""
                 }`}
                 loading="lazy"
               />
