@@ -13,7 +13,7 @@ const servicesList = [
   },
   {
     num: "03/",
-    title: "FRONTEND DEVELOPMENT",
+    title: "APP DEVELOPMENT",
     items: ["UI Dev", "SSR & SSG", "Web Performance"],
   },
   {
