@@ -3,17 +3,17 @@ import { ScrollRevealText } from "./ScrollRevealText";
 const testimonials = [
   {
     quote:
-      "huaR completely changed how I approach building sites in Framer. The templates are not just beautiful, they’re actually structured in a way that makes scaling so much easier.",
-    name: "Yakoub Kashmiri",
+      "huaR delivered an absolutely breathtaking animated website. The custom animation and magnetic physics are flawless. Our brand presence instantly feels world-class—highly recommend their engineering!",
+    name: "Mohammed Zubair",
     role: "Marketing Director",
     avatar: "https://framerusercontent.com/images/kAftuUN9iRKwIt9M6RqZo9NS314.jpg?width=160&height=160",
   },
   {
     quote:
-      "I’ve tried dozens of Framer templates, but huaR stands out. Everything feels intentional, from the layout to the smallest interactions.",
-    name: "Daniel K.",
+      "I’ve tried 35+ agencies, but huaR stands out. Everything feels intentional, from the layout to the smallest interactions.",
+    name: "Sarah Jenkins",
     role: "Indie Maker",
-    avatar: "https://framerusercontent.com/images/HqoHkPp6dpJFdgMqUKIaAXmy7o.jpg?width=160&height=160",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     quote:
@@ -37,8 +37,8 @@ export function Testimonials() {
       {/* Title Section */}
       <div className="border-b border-zinc-800 p-6 sm:p-12">
         <ScrollRevealText
-          text="Testimonials"
-          className="text-3xl font-display font-bold uppercase tracking-wider text-white"
+          text="TESTIMONIALS"
+          className="text-5xl sm:text-6xl md:text-7xl font-display font-black uppercase tracking-wider text-white"
         />
       </div>
 
