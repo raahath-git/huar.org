@@ -36,7 +36,7 @@ const projectsData: Record<
   astral: {
     id: "astral",
     name: "Astral",
-    category: "Free Template",
+    category: "Agency Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "Astral is a modern creative agency template built for bold visuals, smooth interactions, and standout storytelling. Perfect for agencies, studios, and creators who want a polished, high impact online presence without starting from scratch.",
@@ -87,7 +87,7 @@ const projectsData: Record<
   equinox: {
     id: "equinox",
     name: "Equinox",
-    category: "Free Template",
+    category: "SaaS Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "A beautifully crafted website template perfect for AI SaaS businesses looking to showcase their innovative products and services.",
@@ -138,7 +138,7 @@ const projectsData: Record<
   vesta: {
     id: "vesta",
     name: "Vesta",
-    category: "Free Template",
+    category: "AI Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "Vesta is a bold and modern website template made for SaaS and AI startups looking to launch fast and scale smarter with clean design and intuitive customization.",
@@ -189,7 +189,7 @@ const projectsData: Record<
   caelum: {
     id: "caelum",
     name: "Caelum",
-    category: "Free Template",
+    category: "Studio Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "A clean, modern template designed for creative studios and businesses. Built with flexible sections, smooth interactions, and fully editable components so you can launch a professional agency site quickly and for free.",
@@ -240,7 +240,7 @@ const projectsData: Record<
   irsa: {
     id: "irsa",
     name: "Irsa",
-    category: "Free Template",
+    category: "AI Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "Olive Living is a slow-living lifestyle brand that creates products for mindful homes. Their philosophy centers on intentional living, warm textures, and everyday rituals that bring comfort and clarity.",
@@ -271,7 +271,7 @@ const projectsData: Record<
   rah: {
     id: "rah",
     name: "Rah",
-    category: "Free Template",
+    category: "Environmental Template",
     year: "2025",
     liveLink: "https://framer.link/bsFvFjY",
     desc: "Rah is a sleek, nature-inspired template built for environmental projects, nonprofits, and sustainability-driven brands. It features immersive visuals, smooth animations, and flexible sections that make storytelling easy.",
