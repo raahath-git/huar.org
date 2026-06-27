@@ -14,7 +14,7 @@ const servicesList = [
   {
     num: "03/",
     title: "APP DEVELOPMENT",
-    items: ["UI Dev", "SSR & SSG", "Web Performance"],
+    items: ["UI Dev", "Cross-Platform Solutions", "iOS & Android Native Development"],
   },
   {
     num: "04/",
