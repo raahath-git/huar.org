@@ -13,7 +13,7 @@ const testimonials = [
       "I’ve tried 35+ agencies, but huaR stands out. Everything feels intentional, from the layout to the smallest interactions.",
     name: "Sarah Jenkins",
     role: "Indie Maker",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&h=160&q=80",
+    avatar: "/sarah-avatar.png",
   },
   {
     quote:
