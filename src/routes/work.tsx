@@ -19,37 +19,37 @@ const projects = [
   {
     id: "astral",
     name: "Astral",
-    category: "Agency Framer Template",
+    category: "Agency Template",
     image: "https://framerusercontent.com/images/VNXQLcPHw9VbVzy6BDpZ8pUsaU.png?width=1160&height=800",
   },
   {
     id: "equinox",
     name: "Equinox",
-    category: "SaaS Framer Template",
+    category: "SaaS Template",
     image: "https://framerusercontent.com/images/WgEHVRrQs62rgxlzrnXJJ8rr4.png?width=1160&height=800",
   },
   {
     id: "vesta",
     name: "Vesta",
-    category: "AI Framer Template",
+    category: "AI Template",
     image: "https://framerusercontent.com/images/I3azeVtkvdKBGl9TX38tUdXEb0.png?width=1160&height=800",
   },
   {
     id: "caelum",
     name: "Caelum",
-    category: "Studio Framer Template",
+    category: "Studio Template",
     image: "https://framerusercontent.com/images/e3DxUGJWqt7CIVVQIA0VZoy09FQ.png?width=1160&height=800",
   },
   {
     id: "irsa",
     name: "Irsa",
-    category: "AI Framer Template",
+    category: "AI Template",
     image: "https://framerusercontent.com/images/l08IN6OxWS7DxFD28fNZXjCT4.png?width=1160&height=800",
   },
   {
     id: "rah",
     name: "Rah",
-    category: "Environmental Framer Template",
+    category: "Environmental Template",
     image: "https://framerusercontent.com/images/IBHqRDPghoZPLzWsGC2SWmPo.png?width=1160&height=800",
   },
 ];
